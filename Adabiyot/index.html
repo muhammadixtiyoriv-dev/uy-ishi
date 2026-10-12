@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaxshilik — ikki jamoali test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="eyebrow">ADABIYOT • BILIMLAR BELLASHUVI</p>
+      <h1>“Yaxshilik” hikoyasi</h1>
+      <p class="sub">Odil Yoqubov asari asosida — 2 jamoa, 60 ta savol</p>
+    </div>
+    <div class="timer-card">
+      <span>QOLGAN VAQT</span>
+      <strong id="timer">03:00</strong>
+    </div>
+  </header>
+
+  <section class="toolbar">
+    <div class="rules">
+      <strong>Qoidalar:</strong> Har bir jamoada 30 tadan savol.
+      To‘g‘ri javob +1 ball. Javobdan keyin keyingi savol avtomatik ochiladi.
+    </div>
+    <button id="startBtn" class="primary">O‘yinni boshlash</button>
+    <button id="restartBtn" class="secondary">Qaytadan boshlash</button>
+  </section>
+
+  <main class="teams">
+    <section class="team team-a">
+      <div class="team-head">
+        <div>
+          <span class="team-label">1-JAMOA</span>
+          <h2>Mehr jamoasi</h2>
+        </div>
+        <div class="score">
+          <span>Ball</span>
+          <strong id="score1">0</strong>
+        </div>
+      </div>
+      <div class="progress"><div id="progress1"></div></div>
+      <p class="counter" id="counter1">Savol 1 / 30</p>
+      <div class="question-box">
+        <h3 id="question1">O‘yinni boshlash tugmasini bosing.</h3>
+        <div class="answers" id="answers1"></div>
+        <p class="feedback" id="feedback1" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="team team-b">
+      <div class="team-head">
+        <div>
+          <span class="team-label">2-JAMOA</span>
+          <h2>Yaxshilik jamoasi</h2>
+        </div>
+        <div class="score">
+          <span>Ball</span>
+          <strong id="score2">0</strong>
+        </div>
+      </div>
+      <div class="progress"><div id="progress2"></div></div>
+      <p class="counter" id="counter2">Savol 1 / 30</p>
+      <div class="question-box">
+        <h3 id="question2">O‘yinni boshlash tugmasini bosing.</h3>
+        <div class="answers" id="answers2"></div>
+        <p class="feedback" id="feedback2" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="resultModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="result-card">
+      <p class="eyebrow">BELLASHUV YAKUNLANDI</p>
+      <h2 id="resultTitle">Natija</h2>
+      <p id="resultText"></p>
+      <div class="result-scores">
+        <div>
+          <span>1-jamoa</span>
+          <strong id="final1">0</strong>
+        </div>
+        <div>
+          <span>2-jamoa</span>
+          <strong id="final2">0</strong>
+        </div>
+      </div>
+      <button id="playAgain" class="primary">Yana o‘ynash</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
